@@ -6,7 +6,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 79vh;
+	height: auto;
 	margin: 0;
 }
 
@@ -18,7 +18,7 @@ body{
 	padding: 20px;
 }
 
-h1{
+h1, h2{
 	font-family:'Inconsolata';
 	color: #222222;
 }
@@ -38,6 +38,23 @@ p{
 a{
 	text-decoration: none;
 	color: #3e7182;
+}
+
+.list {
+	margin-top: 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, 60px);
+}
+
+.list a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+}
+.list img {
+	margin-bottom: 5px;
 }
 
 footer{

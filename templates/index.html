@@ -12,6 +12,13 @@
                 <hr>
                 <p>A free image server created by Shimmy04 to host emotes drawn by the wonderful Snowtoki. <br>(Forked from <a href="https://github.com/skyflaren/emote-host">skyflaren/emote-host</a>)</p>
                 <p>To use, add the name of your emote to the end of this url, e.g. "<a href="/ohh" target="_blank">https://snomotes.herokuapp.com/ohh</a>"</p>
+                <h2>Emotes</h2>
+                <hr>
+                <div class="list">
+                    {% for e in emotes %}
+                    <a href="/{{e}}"><img src="/{{e}}">{{e}}</a>
+                    {% endfor %}
+                </div>
             </div>
         </div>
         <footer>
