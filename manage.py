@@ -5,7 +5,7 @@ from werkzeug.utils import secure_filename
 
 load_dotenv()
 
-EXTENSIONS = ['png','gif','jpg']
+EXTENSIONS = ['png','gif','jpg', 'webp']
 URLS = ['https://dulldesk.github.io/emote-fetcher','https://emot.cf']
 UPLOAD_FOLDER = os.path.join('%s','uploads')
 ON_404 = "bratwhy"
