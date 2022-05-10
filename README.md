@@ -1,10 +1,10 @@
-# Emote Host
+# Snow Emote Host
 
-Flask application to fetch emotes (in anticipation of global emotes disappearing)
+Flask application to serve Snowtoki emotes
 
 ## Usage
 
-Attach the name of your emote to the end of the url, for example, "https://emho.glitch.me/poggies"
+Attach the name of your emote to the end of the url, for example, "https://snomotes.herokuapp.com/ohh"
 
 ## Installation
 
