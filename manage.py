@@ -13,7 +13,7 @@ ON_404 = "bratwhy"
 app = Flask(__name__, static_url_path='')
 UPLOAD_FOLDER = UPLOAD_FOLDER % app.root_path
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-EMOTES = [f[:-4] for f in os.listdir(UPLOAD_FOLDER) if os.path.isfile(os.path.join(UPLOAD_FOLDER, f))]
+EMOTES = [f[:-4] for f in os.listdir(UPLOAD_FOLDER) if os.path.isfile(os.path.join(UPLOAD_FOLDER, f))].sort()
 
 @app.route("/")
 def home():
