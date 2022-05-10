@@ -1,5 +1,5 @@
 from threading import Thread
-from manage import app
+from app.manage import app
 
 if __name__ == "__main__":
     app.run()
